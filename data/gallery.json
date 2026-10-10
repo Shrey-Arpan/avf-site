@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": "gal-1",
+      "title": "Cinematic Royal Wedding Film",
+      "category": "Cinematography",
+      "image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80",
+      "branch": "Ambedkar Nagar Branch",
+      "caption": "Grand wedding celebration captured in ultra-sharp 4K with drone coverage and warm cinematic tone."
+    },
+    {
+      "id": "gal-2",
+      "title": "Custom Water-Cooled RTX 4080 Rig",
+      "category": "Custom PC Builds",
+      "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80",
+      "branch": "Delhi Branch",
+      "caption": "Precision cable management and ARGB synchronized lighting for a professional video editor in Delhi."
+    },
+    {
+      "id": "gal-3",
+      "title": "Sunset Pre-Wedding Silhouette",
+      "category": "Studio & Photography",
+      "image": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80",
+      "branch": "Ambedkar Nagar Branch",
+      "caption": "Romantic outdoor portrait session capturing genuine golden hour emotion."
+    },
+    {
+      "id": "gal-4",
+      "title": "Retail Hardware Showroom & Apple Hub",
+      "category": "Retail Store",
+      "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80",
+      "branch": "Delhi Branch",
+      "caption": "Wide selection of verified original components, laptops, monitors, and peripherals in stock."
+    },
+    {
+      "id": "gal-5",
+      "title": "Commercial 16-Camera CCTV Installation",
+      "category": "Security & IT",
+      "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=900&q=80",
+      "branch": "Ambedkar Nagar Branch",
+      "caption": "Commercial warehouse multi-angle surveillance setup with remote mobile control."
+    },
+    {
+      "id": "gal-6",
+      "title": "Traditional Haldi & Mehndi Moments",
+      "category": "Cinematography",
+      "image": "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=900&q=80",
+      "branch": "Ambedkar Nagar Branch",
+      "caption": "Vibrant colors, candid joy, and timeless traditional ceremonial rituals."
+    }
+  ]
+}

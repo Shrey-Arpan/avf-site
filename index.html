@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asian Computers & Asian Video Films | Retail Store & Cinematic Studio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Retail Computer & Laptop Store, Apple Products, Custom Gaming PC Builds, CCTV Security, and Award-Winning Wedding Cinematography & Photography Studio in Delhi and Ambedkar Nagar." />
+  <meta name="keywords" content="Asian Computers, Asian Video Films, AVF, computer shop delhi, computer shop ambedkar nagar, wedding videography tanda, wedding photographer nawsanda, custom pc build delhi" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Asian Computers & Asian Video Films | Retail Tech & Studio" />
+  <meta property="og:description" content="Retail computers, laptops, CCTV security, Apple products, and cinematic wedding film studio with branches in Delhi and Ambedkar Nagar." />
+  <meta property="og:type" content="website" />
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+            },
+            accent: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-slate-950 text-slate-200 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-center md:text-left">
+        <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+        <span id="announcement-banner" class="font-medium text-slate-300">
+          Festive Tech Fest: Special Offers on Laptops, Custom PC Rigs & CCTV Systems!
+        </span>
+      </div>
+
+      <div class="flex items-center gap-4 text-slate-400 text-[11px] md:text-xs">
+        <span class="hidden sm:inline-flex items-center gap-1">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-slate-400"></i> Open All 7 Days: 9:00 AM - 9:00 PM
+        </span>
+        <a id="header-call-btn" href="tel:+919452352700" class="hover:text-amber-400 transition-colors flex items-center gap-1 font-semibold text-slate-200">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-amber-400"></i> <span class="phone-text">+91 9452352700</span>
+        </a>
+        <a href="admin/" class="bg-slate-800 hover:bg-indigo-600 text-slate-200 hover:text-white px-2.5 py-0.5 rounded text-[11px] font-bold transition-all flex items-center gap-1 border border-slate-700">
+          <i data-lucide="edit-3" class="w-3 h-3 text-amber-400"></i> Decap CMS
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header class="glass-nav sticky top-0 z-40 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="assets/images/logo.svg" alt="Asian Computers & Asian Video Films" class="h-12 w-auto transition-transform group-hover:scale-[1.02]" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
+        <a href="#branches" class="hover:text-indigo-600 transition-colors">Our Branches</a>
+        <a href="#products" class="hover:text-indigo-600 transition-colors">Retail Shop</a>
+        <a href="#services" class="hover:text-indigo-600 transition-colors">Studio & Services</a>
+        <a href="#gallery" class="hover:text-indigo-600 transition-colors">Portfolio</a>
+        <a href="#reviews" class="hover:text-indigo-600 transition-colors">Reviews</a>
+        <a href="#map-section" class="hover:text-indigo-600 transition-colors">Visit Stores</a>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="flex items-center gap-3">
+        <!-- Inquiry Cart Button -->
+        <button onclick="openCartDrawer()" class="relative p-2.5 rounded-xl bg-white border border-slate-200 hover:bg-slate-100 text-slate-700 transition-all shadow-sm flex items-center gap-2" title="View Inquiry List">
+          <i data-lucide="shopping-bag" class="w-5 h-5 text-indigo-600"></i>
+          <span class="hidden sm:inline text-xs font-bold">Inquiry List</span>
+          <span class="cart-count-badge hidden absolute -top-1.5 -right-1.5 bg-rose-500 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow">
+            0
+          </span>
+        </button>
+
+        <!-- Direct WhatsApp CTA -->
+        <a href="https://wa.me/919452352700?text=Hello%20Asian%20Computers%20%26%20Asian%20Video%20Films!" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-md shadow-emerald-600/20 transition-all">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Us
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-toggle" class="lg:hidden p-2 text-slate-600 hover:text-slate-900 rounded-lg hover:bg-slate-100" aria-label="Toggle Navigation">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+      <a href="#branches" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Our Branches</a>
+      <a href="#products" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Retail Shop & Products</a>
+      <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Studio & Services</a>
+      <a href="#gallery" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Portfolio & Gallery</a>
+      <a href="#reviews" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Customer Reviews</a>
+      <a href="#map-section" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Store Maps & Directions</a>
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="admin/" class="block py-2.5 text-center text-xs font-bold bg-slate-900 text-white rounded-xl">
+          ⚙️ Open Decap CMS Admin
+        </a>
+        <a href="https://wa.me/919452352700" target="_blank" class="block py-2.5 text-center text-xs font-bold bg-emerald-600 text-white rounded-xl">
+          💬 Instant WhatsApp Chat
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden bg-slate-950 text-white pt-16 pb-24 lg:pt-24 lg:pb-32">
+    <!-- Subtle Ambient Glow -->
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gradient-to-tr from-indigo-600/30 via-purple-600/20 to-amber-500/10 blur-[130px] pointer-events-none"></div>
+    <div class="absolute bottom-0 right-0 w-[400px] h-[300px] bg-indigo-500/10 blur-[100px] pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-800 text-xs font-semibold text-indigo-300 mb-6 shadow-inner">
+            <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Dual Branch Tech & Film Studio Hub: Delhi & Ambedkar Nagar
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold font-heading tracking-tight text-white leading-tight mb-6">
+            Everything Tech, Computers & <span class="gradient-text">Cinematic Production</span> Under One Roof.
+          </h1>
+
+          <!-- Subhead -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed mb-8">
+            Shop the latest laptops, custom gaming & editing rigs, CCTV surveillance kits, and genuine Apple gear. Book award-winning 4K cinematic wedding films and studio photography with full local warranty.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-10">
+            <a href="#products" class="px-6 py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold text-sm shadow-lg shadow-indigo-600/30 transition-all flex items-center gap-2">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i> Explore Retail Shop
+            </a>
+            <a href="#services" class="px-6 py-3.5 bg-slate-900 hover:bg-slate-800 text-slate-100 border border-slate-700 rounded-xl font-bold text-sm transition-all flex items-center gap-2">
+              <i data-lucide="film" class="w-4 h-4 text-amber-400"></i> Studio & Services
+            </a>
+            <a href="#branches" class="px-5 py-3.5 text-slate-300 hover:text-white rounded-xl font-semibold text-sm transition-all flex items-center gap-1.5">
+              <span>View Branch Locations</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- Quick Branch Pill Switcher in Hero -->
+          <div class="bg-slate-900/80 backdrop-blur-md p-4 rounded-2xl border border-slate-800/80 inline-block text-left w-full sm:w-auto">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-2">Direct Google Maps Navigation</span>
+            <div class="flex flex-col sm:flex-row gap-2">
+              <a href="https://maps.app.goo.gl/bcLu8VQqSZ9xo7dh7" target="_blank" rel="noopener noreferrer" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl text-xs font-semibold text-slate-200 flex items-center gap-2 transition-all">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-indigo-400"></i>
+                <span>Delhi Branch (Sonia Vihar)</span>
+                <i data-lucide="external-link" class="w-3 h-3 text-slate-400 ml-auto"></i>
+              </a>
+              <a href="https://maps.app.goo.gl/XHpWwRbCYaPwpJ6X7" target="_blank" rel="noopener noreferrer" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl text-xs font-semibold text-slate-200 flex items-center gap-2 transition-all">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i>
+                <span>Ambedkar Nagar Branch (Kedar Nagar)</span>
+                <i data-lucide="external-link" class="w-3 h-3 text-slate-400 ml-auto"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80" alt="Tech Rig & Studio Production" class="w-full h-80 sm:h-96 object-cover opacity-80" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-amber-400 text-slate-950">Featured Rig</span>
+                <span class="text-xs text-slate-300">Custom Built in Delhi & UP</span>
+              </div>
+              <h3 class="text-xl font-bold font-heading text-white mb-1">Core i7 13700F + RTX 4060 Rig</h3>
+              <p class="text-xs text-slate-300 mb-3">Custom assembled with genuine components, 3-year warranty, and professional cable management.</p>
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-2xl font-black font-heading text-white">₹86,990</span>
+                  <span class="text-xs text-slate-400 line-through ml-1">₹1,05,000</span>
+                </div>
+                <button onclick="addToCart('prod-1')" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 shadow-md">
+                  <i data-lucide="plus" class="w-3.5 h-3.5"></i> Add to Inquiry
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="bg-white border-b border-slate-200 py-8 relative -mt-6 max-w-6xl mx-auto rounded-2xl shadow-lg px-6 z-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="border-r border-slate-100 last:border-0">
+        <div id="stat-experience" class="text-3xl md:text-4xl font-extrabold font-heading text-indigo-600">15+</div>
+        <div class="text-xs text-slate-500 font-medium uppercase tracking-wider mt-1">Years Experience</div>
+      </div>
+      <div class="border-r border-slate-100 last:border-0">
+        <div id="stat-clients" class="text-3xl md:text-4xl font-extrabold font-heading text-slate-900">10,000+</div>
+        <div class="text-xs text-slate-500 font-medium uppercase tracking-wider mt-1">Happy Clients</div>
+      </div>
+      <div class="border-r border-slate-100 last:border-0">
+        <div id="stat-weddings" class="text-3xl md:text-4xl font-extrabold font-heading text-amber-500">500+</div>
+        <div class="text-xs text-slate-500 font-medium uppercase tracking-wider mt-1">Weddings Filmed</div>
+      </div>
+      <div>
+        <div id="stat-products" class="text-3xl md:text-4xl font-extrabold font-heading text-slate-900">25,000+</div>
+        <div class="text-xs text-slate-500 font-medium uppercase tracking-wider mt-1">Tech Products Sold</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANCHES SECTION -->
+  <section id="branches" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-xs font-extrabold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200 inline-block mb-3">
+        Dual Branch Network
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
+        Visit Our Retail Stores & Production Studios
+      </h2>
+      <p class="text-slate-600 text-sm md:text-base mt-3 leading-relaxed">
+        Whether you are in the Delhi NCR capital region or in Ambedkar Nagar, UP, our team provides personalized in-person consultation, retail sales, repairs, and studio bookings.
+      </p>
+    </div>
+
+    <!-- Dynamic Branches Grid -->
+    <div id="branches-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Injected via JavaScript -->
+    </div>
+  </section>
+
+  <!-- RETAIL SHOP & PRODUCT CATALOG SECTION -->
+  <section id="products" class="py-20 bg-slate-100/70 border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200 inline-block mb-2">
+            Retail Store Inventory
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
+            Explore Hardware, Laptops & Accessories
+          </h2>
+          <p class="text-slate-600 text-sm mt-1">
+            Genuine products backed by official manufacturer warranties and local branch support.
+          </p>
+        </div>
+
+        <!-- Filter Controls Bar -->
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold text-slate-500">Filter Branch:</span>
+          <div class="inline-flex bg-white p-1 rounded-xl border border-slate-200 shadow-sm text-xs font-semibold">
+            <button onclick="setBranchFilter('all')" data-branch="all" class="branch-filter-btn px-3 py-1.5 rounded-lg bg-indigo-600 text-white transition-all">All</button>
+            <button onclick="setBranchFilter('delhi-branch')" data-branch="delhi-branch" class="branch-filter-btn px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Delhi</button>
+            <button onclick="setBranchFilter('ambedkar-nagar-branch')" data-branch="ambedkar-nagar-branch" class="branch-filter-btn px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Ambedkar Nagar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search & Category Filters Bar -->
+      <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm mb-8 space-y-4">
+        <div class="flex flex-col sm:flex-row items-center gap-3">
+          <!-- Search Input -->
+          <div class="relative flex-1 w-full">
+            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+            <input 
+              id="product-search-input" 
+              type="text" 
+              placeholder="Search by product name, category, or SKU (e.g. Core i7, MacBook, CP PLUS)..." 
+              class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
+            />
+          </div>
+
+          <!-- Sort Select -->
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <span class="text-xs font-bold text-slate-500 whitespace-nowrap">Sort By:</span>
+            <select id="product-sort-select" class="w-full sm:w-auto py-2.5 px-3 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white">
+              <option value="featured">Featured First</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Product Name (A-Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Category Horizontal Scroll Pills -->
+        <div class="pt-2 border-t border-slate-100">
+          <div id="category-filter-container" class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Count Label -->
+      <div class="flex items-center justify-between text-xs text-slate-500 mb-6 px-1">
+        <span id="products-count">Showing products...</span>
+        <span class="flex items-center gap-1 text-indigo-600 font-semibold cursor-pointer" onclick="resetFilters()">
+          <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> Reset Filters
+        </span>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STUDIO & IT SERVICES SECTION -->
+  <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-xs font-extrabold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200 inline-block mb-3">
+        Studio & IT Solutions
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
+        Professional Production & Tech Services
+      </h2>
+      <p class="text-slate-600 text-sm md:text-base mt-3 leading-relaxed">
+        From cinematic 4K wedding films and pre-wedding shoots to chip-level laptop repairs and turnkey CCTV installations.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Injected via JavaScript -->
+    </div>
+  </section>
+
+  <!-- PORTFOLIO & GALLERY SECTION -->
+  <section id="gallery" class="py-20 bg-slate-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-widest text-amber-400 bg-slate-900 px-3 py-1 rounded-full border border-slate-800 inline-block mb-3">
+            Our Work in Action
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+            Cinematic Highlights & Tech Showcase
+          </h2>
+          <p class="text-slate-400 text-sm mt-2 max-w-xl">
+            A glimpse of our recent wedding productions, custom desktop workstation builds, and retail store setups.
+          </p>
+        </div>
+
+        <!-- Gallery Filter Tabs -->
+        <div class="flex flex-wrap gap-2 text-xs font-bold">
+          <button onclick="setGalleryFilter('All')" data-category="All" class="gallery-filter-btn px-4 py-2 rounded-xl bg-indigo-600 text-white transition-all">All</button>
+          <button onclick="setGalleryFilter('Cinematography')" data-category="Cinematography" class="gallery-filter-btn px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white transition-all">Cinematography</button>
+          <button onclick="setGalleryFilter('Custom PC Builds')" data-category="Custom PC Builds" class="gallery-filter-btn px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white transition-all">PC Builds</button>
+          <button onclick="setGalleryFilter('Studio & Photography')" data-category="Studio & Photography" class="gallery-filter-btn px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white transition-all">Studio Shoots</button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS SECTION -->
+  <section id="reviews" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-xs font-extrabold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200 inline-block mb-3">
+        Customer Testimonials
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
+        Trusted by Over 10,000 Happy Clients
+      </h2>
+      <p class="text-slate-600 text-sm md:text-base mt-3 leading-relaxed">
+        Read real feedback from clients who purchased hardware, booked wedding films, or installed security systems.
+      </p>
+    </div>
+
+    <!-- Reviews Grid -->
+    <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Injected via JavaScript -->
+    </div>
+  </section>
+
+  <!-- INTERACTIVE STORE LOCATIONS & GOOGLE MAPS SECTION -->
+  <section id="map-section" class="py-20 bg-slate-100/80 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200 inline-block mb-3">
+          Find Us in Person
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
+          Locate Our Branches on Google Maps
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          Toggle below to view map locations, contact details, and instant turn-by-turn navigation for each store.
+        </p>
+      </div>
+
+      <!-- Map Switcher Tabs -->
+      <div class="flex justify-center mb-8">
+        <div class="inline-flex bg-white p-1.5 rounded-2xl border border-slate-200 shadow-sm gap-2">
+          <button onclick="setMapBranch('delhi-branch')" data-branch="delhi-branch" class="map-tab-btn px-5 py-2.5 text-xs md:text-sm font-bold rounded-xl transition-all flex items-center gap-2 bg-indigo-600 text-white shadow">
+            <i data-lucide="map-pin" class="w-4 h-4"></i> Delhi Branch (Sonia Vihar / Shahdara)
+          </button>
+          <button onclick="setMapBranch('ambedkar-nagar-branch')" data-branch="ambedkar-nagar-branch" class="map-tab-btn px-5 py-2.5 text-xs md:text-sm font-bold rounded-xl transition-all flex items-center gap-2 bg-white text-slate-700">
+            <i data-lucide="map-pin" class="w-4 h-4"></i> Ambedkar Nagar Branch (Kedar Nagar)
+          </button>
+        </div>
+      </div>
+
+      <!-- Map & Details Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div id="map-container" class="lg:col-span-7">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <div id="map-branch-details" class="lg:col-span-5">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DECAP CMS ZERO-BACKEND INFO BANNER -->
+  <section class="py-12 bg-indigo-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-indigo-800 flex items-center justify-center text-amber-400 shrink-0">
+          <i data-lucide="git-branch" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h3 class="text-base sm:text-lg font-bold font-heading text-white">
+            100% Free Zero-Backend Site Managed via Decap CMS
+          </h3>
+          <p class="text-xs sm:text-sm text-indigo-200">
+            All branches, products, and services are committed directly to your Git repository as JSON files. No database or monthly server fees.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="admin/" class="px-5 py-3 bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs rounded-xl shadow-lg transition-all flex items-center gap-2">
+          <i data-lucide="sliders" class="w-4 h-4"></i> Open Decap CMS Admin
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="px-4 py-3 bg-indigo-800 hover:bg-indigo-700 text-white font-bold text-xs rounded-xl border border-indigo-700 transition-all flex items-center gap-1.5">
+          <i data-lucide="github" class="w-4 h-4"></i> Hosted on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-900">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2">
+          <a href="#" class="flex items-center gap-3 mb-4">
+            <img src="assets/images/logo.svg" alt="AVF Logo" class="h-10 w-auto filter invert brightness-200" />
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed mb-6 max-w-sm">
+            Asian Computers & Asian Video Films is your trusted retail hub for computers, laptops, CCTV security systems, and high-end cinematic wedding & event video production.
+          </p>
+          <div class="flex items-center gap-3 text-slate-400">
+            <a href="https://wa.me/919452352700" target="_blank" class="p-2 rounded-lg bg-slate-900 hover:bg-emerald-600 hover:text-white transition-colors" title="WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+            <a href="tel:+919452352700" class="p-2 rounded-lg bg-slate-900 hover:bg-indigo-600 hover:text-white transition-colors" title="Call Us">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+            <a href="admin/" class="p-2 rounded-lg bg-slate-900 hover:bg-amber-500 hover:text-slate-950 transition-colors" title="Decap CMS Login">
+              <i data-lucide="lock" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Branch 1 Links -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3 flex items-center gap-1.5">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-indigo-400"></i> Delhi Branch
+          </h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-2">
+            Main Wazirabad Road, Biharipur Extn / Sonia Vihar, Shahdara North, Delhi - 110094
+          </p>
+          <p class="text-xs text-slate-300 font-semibold mb-3">📞 +91 9999999776 / 9007199254</p>
+          <a href="https://maps.app.goo.gl/bcLu8VQqSZ9xo7dh7" target="_blank" rel="noopener noreferrer" class="text-xs text-indigo-400 hover:underline flex items-center gap-1">
+            <span>View on Google Maps</span> <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- Branch 2 Links -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3 flex items-center gap-1.5">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i> Ambedkar Nagar Hub
+          </h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-2">
+            Iltifatganj to Akbarpur Road, Nawsanda / Kedar Nagar, Gauhaniya, Tanda, UP - 224230
+          </p>
+          <p class="text-xs text-slate-300 font-semibold mb-3">📞 +91 9452352700 / 9794445700</p>
+          <a href="https://maps.app.goo.gl/XHpWwRbCYaPwpJ6X7" target="_blank" rel="noopener noreferrer" class="text-xs text-amber-400 hover:underline flex items-center gap-1">
+            <span>View on Google Maps</span> <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- Quick Links & CMS -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#products" class="hover:text-white transition-colors">Retail Products</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Studio & Filming</a></li>
+            <li><a href="#gallery" class="hover:text-white transition-colors">Portfolio Gallery</a></li>
+            <li><a href="#reviews" class="hover:text-white transition-colors">Google Reviews</a></li>
+            <li><a href="admin/" class="text-amber-400 hover:text-amber-300 font-bold transition-colors">🔐 Decap CMS Admin (/admin)</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>© 2026 Asian Computers & Asian Video Films. All rights reserved.</p>
+        <p class="flex items-center gap-1">
+          <span>Git-backed Decap CMS static website • Hosted on GitHub Pages</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a id="floating-whatsapp" href="https://wa.me/919452352700" target="_blank" rel="noopener noreferrer" class="whatsapp-float bg-emerald-500 text-white p-3.5 rounded-full flex items-center justify-center" title="Chat with us on WhatsApp">
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+  </a>
+
+  <!-- PRODUCT DETAIL MODAL -->
+  <div id="product-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+      <button onclick="closeProductModal()" class="absolute top-4 right-4 z-10 p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div id="product-modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICE DETAIL MODAL -->
+  <div id="service-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+      <button onclick="closeServiceModal()" class="absolute top-4 right-4 z-10 p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div id="service-modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/95 backdrop-blur-md" onclick="closeLightbox()">
+    <div class="max-w-4xl w-full text-center relative" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-white hover:text-amber-400 p-2">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <img id="lightbox-img" src="" alt="Portfolio preview" class="max-h-[75vh] w-auto mx-auto rounded-xl shadow-2xl" />
+      <h3 id="lightbox-title" class="text-lg font-bold font-heading text-white mt-4"></h3>
+      <p id="lightbox-caption" class="text-xs text-slate-300 mt-1 max-w-md mx-auto"></p>
+    </div>
+  </div>
+
+  <!-- INQUIRY CART DRAWER (SLIDE-OVER) -->
+  <div id="cart-overlay" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs transition-opacity" onclick="closeCartDrawer()"></div>
+  <div id="cart-drawer" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-white shadow-2xl translate-x-full transition-transform duration-300 flex flex-col justify-between">
+    
+    <!-- Drawer Header -->
+    <div class="p-5 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+      <div class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center shadow-sm">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900 text-base">Inquiry & Order List</h3>
+          <p class="text-xs text-slate-500">Send directly to shop via WhatsApp</p>
+        </div>
+      </div>
+      <button onclick="closeCartDrawer()" class="p-2 text-slate-400 hover:text-slate-700 rounded-lg">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Items List -->
+    <div id="cart-items-container" class="p-5 flex-1 overflow-y-auto space-y-3">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Drawer Footer & WhatsApp Trigger -->
+    <div class="p-5 border-t border-slate-200 bg-slate-50 space-y-4">
+      
+      <!-- Target Branch Selector -->
+      <div>
+        <label for="cart-branch-select" class="block text-xs font-bold text-slate-700 mb-1">Select Branch for Inquiry / Pickup:</label>
+        <select id="cart-branch-select" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs font-semibold text-slate-800 bg-white">
+          <option value="delhi-branch">Delhi Branch (Sonia Vihar / Shahdara)</option>
+          <option value="ambedkar-nagar-branch">Ambedkar Nagar Branch (Nawsanda / Kedar Nagar)</option>
+        </select>
+      </div>
+
+      <!-- Quick Details -->
+      <div class="grid grid-cols-2 gap-2">
+        <input id="inquiry-name" type="text" placeholder="Your Name (Optional)" class="p-2 rounded-lg border border-slate-300 text-xs" />
+        <input id="inquiry-city" type="text" placeholder="Your City / Locality" class="p-2 rounded-lg border border-slate-300 text-xs" />
+      </div>
+
+      <!-- Estimated Total -->
+      <div class="flex items-center justify-between text-sm font-bold text-slate-900 pt-2 border-t border-slate-200">
+        <span>Estimated Total:</span>
+        <span id="cart-total-amount" class="text-lg font-extrabold text-indigo-600 font-heading">₹0</span>
+      </div>
+
+      <!-- Send WhatsApp Button -->
+      <button onclick="sendWhatsAppInquiry()" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs sm:text-sm font-bold shadow-lg shadow-emerald-600/25 transition-all flex items-center justify-center gap-2">
+        <i data-lucide="message-circle" class="w-4 h-4"></i> Send Inquiry via WhatsApp
+      </button>
+
+      <p class="text-[11px] text-center text-slate-400">
+        No payment needed now. Our branch team confirms stock, best discounts & delivery via WhatsApp.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow-xl border border-slate-800 opacity-0 pointer-events-none translate-y-4 transition-all duration-300">
+    Notification message
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/default-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

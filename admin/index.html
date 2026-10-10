@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager | Asian Computers & Asian Video Films</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <style>
+    /* Clean back button in top right */
+    .cms-return-pill {
+      position: fixed;
+      top: 12px;
+      right: 16px;
+      z-index: 999999;
+      background: #4f46e5;
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cms-return-pill:hover {
+      background: #4338ca;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <a href="../" class="cms-return-pill" title="Return to Shop Website">
+    <span>← Back to Website</span>
+  </a>
+
+  <!-- Decap CMS Script -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
+</html>

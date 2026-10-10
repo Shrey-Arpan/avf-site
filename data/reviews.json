@@ -1,0 +1,40 @@
+{
+  "reviews": [
+    {
+      "id": "rev-1",
+      "author": "Ankit Srivastava",
+      "rating": 5,
+      "date": "2026-08-14",
+      "branch": "Ambedkar Nagar Branch",
+      "service": "Wedding Cinematography & Drone",
+      "comment": "Asian Video Films covered my brother's wedding in Ambedkar Nagar. The teaser reel and the full 4K cinematic film made our entire family emotional. Their camera team is polite, punctual, and extremely creative. Truly the best in UP!"
+    },
+    {
+      "id": "rev-2",
+      "author": "Rahul Verma",
+      "rating": 5,
+      "date": "2026-09-02",
+      "branch": "Delhi Branch",
+      "service": "Custom PC Build (i7 + RTX 4060)",
+      "comment": "Got my video editing and gaming rig assembled from Asian Computer in Delhi (Sonia Vihar / Biharipur). The cable management is flawless and pricing was better than Nehru Place! They even stress-tested the system before delivery."
+    },
+    {
+      "id": "rev-3",
+      "author": "Pooja Sharma",
+      "rating": 5,
+      "date": "2026-07-28",
+      "branch": "Delhi Branch",
+      "service": "HP Laptop Purchase & Fast Setup",
+      "comment": "Genuine products with manufacturer warranty. The team helped me choose the perfect HP laptop for my graphic design coursework and transferred all my old data free of cost. Highly recommended store!"
+    },
+    {
+      "id": "rev-4",
+      "author": "Mohd. Tariq",
+      "rating": 5,
+      "date": "2026-09-20",
+      "branch": "Ambedkar Nagar Branch",
+      "service": "8-Camera CP PLUS CCTV Installation",
+      "comment": "Got complete CCTV security done for our showroom in Kedar Nagar. The technician completed wiring without any mess and connected all cameras to my mobile phone so I can monitor from anywhere. Very professional!"
+    }
+  ]
+}

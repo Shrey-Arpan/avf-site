@@ -1,0 +1,112 @@
+{
+  "services": [
+    {
+      "id": "serv-1",
+      "title": "Cinematic Wedding & Event Videography",
+      "slug": "wedding-cinematography",
+      "category": "Video Production",
+      "icon": "film",
+      "image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
+      "starting_price": "Starting ₹25,000",
+      "branches": ["both"],
+      "short_desc": "Full-length 4K cinematic wedding movies, traditional ceremonies, teasers, and high-energy highlight reels.",
+      "deliverables": [
+        "Multi-camera 4K UHD coverage with gimbal stabilization",
+        "Cinematic teaser video (60s reel) within 48 hours",
+        "Full ceremony documentation film with crisp audio recording",
+        "Master color graded in DaVinci Resolve",
+        "Delivered on customized luxury USB drive & cloud download"
+      ]
+    },
+    {
+      "id": "serv-2",
+      "title": "Pre-Wedding & Creative Fashion Shoots",
+      "slug": "pre-wedding-shoots",
+      "category": "Photography & Studio",
+      "icon": "camera",
+      "image": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80",
+      "starting_price": "Starting ₹15,000",
+      "branches": ["both"],
+      "short_desc": "Romantic, aesthetic pre-wedding photo & video sessions with customized themes, styling, and location shoots.",
+      "deliverables": [
+        "Full-day destination or outdoor location shoot",
+        "Drone aerial romantic sequence clips",
+        "50+ edited high-resolution digital master portraits",
+        "Cinematic 2-3 minute romantic teaser film",
+        "Designer hardcover coffee-table photo book"
+      ]
+    },
+    {
+      "id": "serv-3",
+      "title": "Custom PC Assembly & Workstation Building",
+      "slug": "custom-pc-build",
+      "category": "IT & Hardware",
+      "icon": "cpu",
+      "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=80",
+      "starting_price": "Assembly starting ₹999",
+      "branches": ["both"],
+      "short_desc": "Tailor-made desktop computers for gaming, video rendering, AutoCAD, architecture, and office productivity.",
+      "deliverables": [
+        "Component consultation matched exactly to your budget and software needs",
+        "Expert static-safe assembly & clean cable routing",
+        "24-hour thermal stress testing & benchmark burn-in",
+        "Clean OS setup, latest BIOS & GPU drivers",
+        "Full warranty registration assistance"
+      ]
+    },
+    {
+      "id": "serv-4",
+      "title": "Laptop, Mac & PC Repair / Chip-Level Service",
+      "slug": "computer-repairs",
+      "category": "IT & Hardware",
+      "icon": "wrench",
+      "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
+      "starting_price": "Diagnostics starting ₹299",
+      "branches": ["both"],
+      "short_desc": "Fast turnaround repair for slow laptops, broken displays, motherboard chip repairs, and SSD upgrades.",
+      "deliverables": [
+        "Free preliminary fault diagnosis",
+        "SSD & RAM express upgrade (Same day 30-minute turnaround)",
+        "Broken hinge, keyboard, trackpad, and screen replacement",
+        "Liquid damage recovery & chip-level motherboard repair",
+        "Data backup, virus cleaning & OS reinstallation"
+      ]
+    },
+    {
+      "id": "serv-5",
+      "title": "CCTV Security Surveillance Installation",
+      "slug": "cctv-installation",
+      "category": "Security Solutions",
+      "icon": "shield",
+      "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
+      "starting_price": "Installation from ₹350/camera",
+      "branches": ["both"],
+      "short_desc": "Turnkey installation of CP PLUS, Hikvision, and Wi-Fi cameras for homes, retail shops, warehouses, and schools.",
+      "deliverables": [
+        "Free on-site camera placement survey & quotation",
+        "Concealed neat wiring and weatherproof junction boxes",
+        "Mobile phone live stream setup on client's phone",
+        "DVR/NVR configuration and motion alert notifications",
+        "1-Year complimentary on-site maintenance support"
+      ]
+    },
+    {
+      "id": "serv-6",
+      "title": "4K Drone Aerial Photography & Videography",
+      "slug": "drone-shoots",
+      "category": "Video Production",
+      "icon": "plane",
+      "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=800&q=80",
+      "starting_price": "Starting ₹5,000/session",
+      "branches": ["both"],
+      "short_desc": "Spectacular aerial perspectives for weddings, large events, real estate properties, and commercial films.",
+      "deliverables": [
+        "Licensed, certified drone pilot with DJI 4K aircraft",
+        "Smooth cinematic pans, birds-eye reveals, and tracking shots",
+        "High-wind resistance and dual battery sessions",
+        "Uncompressed 4K video clips & RAW aerial photos",
+        "Instant review on HD ground monitor"
+      ]
+    }
+  ]
+}

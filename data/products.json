@@ -1,0 +1,272 @@
+{
+  "categories": [
+    "All",
+    "Laptops & Computers",
+    "PC Components & Builds",
+    "Apple & Premium Tech",
+    "Accessories & Peripherals",
+    "CCTV & Security",
+    "Photo & Video Studio",
+    "Printers & Office IT"
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "title": "Custom Gaming & 4K Video Editing Rig (Core i7 / RTX 4060)",
+      "sku": "AVF-PC-G4K",
+      "category": "PC Components & Builds",
+      "price": 86990,
+      "mrp": 105000,
+      "in_stock": true,
+      "featured": true,
+      "badge": "Top Seller",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "High-performance rig optimized for 4K timeline rendering, gaming, and 3D modeling.",
+      "specs": [
+        "Processor: Intel Core i7 13700F (16 Cores, up to 5.2 GHz)",
+        "GPU: NVIDIA GeForce RTX 4060 8GB GDDR6",
+        "Memory: 32GB DDR5 5200MHz Dual Channel RAM",
+        "Storage: 1TB Gen4 NVMe M.2 SSD (7000 MB/s)",
+        "Cooling: 240mm ARGB Liquid Cooler",
+        "Power & Case: 650W 80+ Bronze PSU with Tempered Glass ARGB Case",
+        "Warranty: 3 Years Onsite Hardware Warranty"
+      ]
+    },
+    {
+      "id": "prod-2",
+      "title": "HP 15s FHD Laptop (Intel Core i5 12th Gen / 16GB / 512GB SSD)",
+      "sku": "AVF-LAP-HP15",
+      "category": "Laptops & Computers",
+      "price": 48990,
+      "mrp": 62500,
+      "in_stock": true,
+      "featured": true,
+      "badge": "Best Deal",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "Thin and light laptop for business, students, coding, and multitasking.",
+      "specs": [
+        "Intel Core i5-1235U (10 Cores, 12 Threads)",
+        "16GB DDR4 RAM (Expandable up to 32GB)",
+        "512GB PCIe NVMe M.2 SSD",
+        "15.6-inch Micro-Edge FHD Anti-glare Display",
+        "Intel Iris Xe Graphics, Backlit Keyboard",
+        "Windows 11 Home + MS Office 2021 Pre-installed"
+      ]
+    },
+    {
+      "id": "prod-3",
+      "title": "Apple MacBook Air 13.6\" (M2 Chip / 8GB / 256GB SSD)",
+      "sku": "AVF-APL-MBA-M2",
+      "category": "Apple & Premium Tech",
+      "price": 83990,
+      "mrp": 99900,
+      "in_stock": true,
+      "featured": true,
+      "badge": "Genuine Apple",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "Supercharged by the next-gen M2 chip with stunning Liquid Retina display and 18h battery.",
+      "specs": [
+        "Apple M2 chip with 8-core CPU and 8-core GPU",
+        "8GB Unified High-speed Memory",
+        "256GB Superfast SSD Storage",
+        "13.6-inch Liquid Retina display with True Tone",
+        "1080p FaceTime HD Camera & MagSafe 3 Charging",
+        "Silent fanless design with up to 18 hours battery life"
+      ]
+    },
+    {
+      "id": "prod-4",
+      "title": "CP PLUS 4-Camera HD Night Vision CCTV Security Kit",
+      "sku": "AVF-CCTV-CP4",
+      "category": "CCTV & Security",
+      "price": 10999,
+      "mrp": 15500,
+      "in_stock": true,
+      "featured": true,
+      "badge": "Popular",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "Complete surveillance system with 4 HD cameras, DVR, 1TB hard drive, and mobile live view.",
+      "specs": [
+        "2x Indoor Dome + 2x Outdoor Weatherproof Bullet Cameras (2.4MP)",
+        "4-Channel Full HD Digital Video Recorder (DVR)",
+        "1TB Seagate Surveillance Hard Drive (15-20 days continuous recording)",
+        "High-output Power Supply Unit & BNC/DC Connectors",
+        "Night Vision IR up to 20 meters",
+        "Free Mobile Remote Monitoring App (Android & iOS)"
+      ]
+    },
+    {
+      "id": "prod-5",
+      "title": "Dell Inspiron 3520 (Intel Core i3 12th Gen / 8GB / 512GB SSD / 120Hz)",
+      "sku": "AVF-LAP-DEL35",
+      "category": "Laptops & Computers",
+      "price": 35490,
+      "mrp": 44990,
+      "in_stock": true,
+      "featured": false,
+      "badge": "Value Pick",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "Reliable everyday workhorse for office work, accounting, and streaming.",
+      "specs": [
+        "Intel Core i3-1215U (6 Cores, up to 4.40 GHz)",
+        "8GB DDR4 RAM (Expandable)",
+        "512GB NVMe M.2 SSD",
+        "15.6\" FHD WVA AG 120Hz 250 nits Display",
+        "Spill-resistant full size keyboard",
+        "Fast charging: 80% charge in 60 minutes"
+      ]
+    },
+    {
+      "id": "prod-6",
+      "title": "Samsung 980 1TB NVMe PCIe 3.0 M.2 Solid State Drive",
+      "sku": "AVF-SSD-SAM1TB",
+      "category": "PC Components & Builds",
+      "price": 6499,
+      "mrp": 8999,
+      "in_stock": true,
+      "featured": false,
+      "badge": "High Speed",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "Upgrade your PC or laptop with blazingly fast 3,500 MB/s read speeds.",
+      "specs": [
+        "Sequential Read speeds up to 3,500 MB/s",
+        "Sequential Write speeds up to 3,000 MB/s",
+        "DRAM-less design powered by HMB technology",
+        "Dynamic Thermal Guard protection",
+        "5 Years Manufacturer Warranty"
+      ]
+    },
+    {
+      "id": "prod-7",
+      "title": "Canon PIXMA G3010 All-in-One Ink Tank Color Wi-Fi Printer",
+      "sku": "AVF-PRN-CAN3010",
+      "category": "Printers & Office IT",
+      "price": 13490,
+      "mrp": 16995,
+      "in_stock": true,
+      "featured": true,
+      "badge": "Shop Favorite",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "High volume low-cost wireless printing, scanning and copying for home & studio.",
+      "specs": [
+        "Print, Scan, Copy with Built-in Wi-Fi & Direct Wireless",
+        "High yield ink bottles: up to 7,000 color pages / 6,000 black pages",
+        "Page yield per print cost: as low as 9 paise (B&W) and 32 paise (Color)",
+        "Borderless photo printing up to A4 size",
+        "1.2-inch Segment LCD Screen"
+      ]
+    },
+    {
+      "id": "prod-8",
+      "title": "Apple iPad 10th Gen 10.9-inch Wi-Fi (64GB / A14 Bionic)",
+      "sku": "AVF-APL-IPAD10",
+      "category": "Apple & Premium Tech",
+      "price": 31990,
+      "mrp": 39900,
+      "in_stock": true,
+      "featured": false,
+      "badge": "Trending",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "All-screen design with 10.9-inch Liquid Retina display, Touch ID, and USB-C.",
+      "specs": [
+        "10.9-inch Liquid Retina display with True Tone",
+        "A14 Bionic chip with 6-core CPU and 4-core GPU",
+        "12MP Ultra Wide front camera with Center Stage",
+        "12MP Wide back camera with 4K video recording",
+        "Supports Apple Pencil & Magic Keyboard Folio"
+      ]
+    },
+    {
+      "id": "prod-9",
+      "title": "Digitek 18-Inch Professional Bi-Color LED Ring Light Kit",
+      "sku": "AVF-STU-RING18",
+      "category": "Photo & Video Studio",
+      "price": 2899,
+      "mrp": 4995,
+      "in_stock": true,
+      "featured": false,
+      "badge": "Studio Grade",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "Ideal for portrait photography, makeup shoots, video podcasting, and YouTube content.",
+      "specs": [
+        "18-inch (45cm) large circular diffuser ring light",
+        "Bi-color temperature control (3200K warm to 5600K daylight)",
+        "Brightness dimming from 10% to 100%",
+        "Comes with 9ft heavy duty metal light stand",
+        "Smartphone mount holder & hot-shoe adapter included"
+      ]
+    },
+    {
+      "id": "prod-10",
+      "title": "Boya BY-M1 Pro Omnidirectional Lavalier Microphone",
+      "sku": "AVF-MIC-BYM1P",
+      "category": "Photo & Video Studio",
+      "price": 999,
+      "mrp": 1999,
+      "in_stock": true,
+      "featured": false,
+      "badge": "Creator Pick",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "Crystal clear audio recording for smartphones, DSLR cameras, camcorders, and PCs.",
+      "specs": [
+        "Clip-on mic for Smartphones, DSLRs, Audio Recorders",
+        "Omni-directional condenser capsule",
+        "-10dB sound attenuation switch",
+        "Headphone monitoring playback jack",
+        "6-meter (20-foot) heavy duty shielded cable"
+      ]
+    },
+    {
+      "id": "prod-11",
+      "title": "TP-Link Tapo C200 360° 1080P Wi-Fi Smart Home Security Camera",
+      "sku": "AVF-CCTV-TAP200",
+      "category": "CCTV & Security",
+      "price": 1999,
+      "mrp": 3299,
+      "in_stock": true,
+      "featured": false,
+      "badge": "Smart IoT",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1549109926-58f039549485?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "Pan/Tilt home security camera with crystal clear night vision and two-way audio.",
+      "specs": [
+        "Full HD 1080p resolution with 360° horizontal coverage",
+        "Advanced night vision up to 30 feet in complete darkness",
+        "Motion detection with instant smartphone push alerts",
+        "Two-way talk with built-in microphone & speaker",
+        "Supports microSD card storage up to 512GB and cloud backup"
+      ]
+    },
+    {
+      "id": "prod-12",
+      "title": "Mechanical RGB Gaming Keyboard & Precision Mouse Combo",
+      "sku": "AVF-ACC-RGBCOM",
+      "category": "Accessories & Peripherals",
+      "price": 2199,
+      "mrp": 3499,
+      "in_stock": true,
+      "featured": false,
+      "badge": "RGB Lighting",
+      "branches": ["both"],
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80",
+      "short_desc": "Tactile blue switch mechanical keyboard with braided cable and 7200 DPI gaming mouse.",
+      "specs": [
+        "Full-sized mechanical keyboard with tactile clicky blue switches",
+        "Individual key rainbow RGB backlighting with 14 preset modes",
+        "Anti-ghosting on all 104 keys",
+        "Ergonomic gaming mouse with 6 programmable buttons (up to 7200 DPI)",
+        "Braided anti-tangle USB cable"
+      ]
+    }
+  ]
+}

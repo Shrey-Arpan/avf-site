@@ -1,0 +1,66 @@
+{
+  "branches": [
+    {
+      "id": "delhi-branch",
+      "name": "Asian Computer & Asian Video Films",
+      "short_name": "Delhi Branch",
+      "tag": "Delhi NCR Branch",
+      "is_hq": false,
+      "address": "Main Wazirabad Road, Biharipur Extn / Sonia Vihar, Shahdara North",
+      "city": "Delhi",
+      "state": "Delhi",
+      "pincode": "110094",
+      "country": "India",
+      "full_address": "Main Wazirabad Road, Biharipur Extension / Sonia Vihar, Shahdara North, Delhi - 110094",
+      "phones": ["+91 9999999776", "+91 9007199254"],
+      "whatsapp": "919999999776",
+      "email": "delhi@asianvideofilms.com",
+      "opening_hours": "Monday - Sunday: 9:30 AM - 9:00 PM",
+      "latitude": 28.7343337,
+      "longitude": 77.2540286,
+      "google_maps_url": "https://maps.app.goo.gl/bcLu8VQqSZ9xo7dh7",
+      "embed_map_url": "https://maps.google.com/maps?q=28.7343337,77.2540286&hl=en&z=16&output=embed",
+      "rating": 4.9,
+      "reviews_count": 86,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+      "features": [
+        "Retail Computer Hardware & Laptops",
+        "Custom Gaming & Workstation Assembly",
+        "Apple Devices, Accessories & Repairs",
+        "Photo Studio & Urgency Printing",
+        "CCTV Surveillance & Security Solutions"
+      ]
+    },
+    {
+      "id": "ambedkar-nagar-branch",
+      "name": "Asian Computers & Asian Video Films",
+      "short_name": "Ambedkar Nagar Branch",
+      "tag": "Head Office & Studio Hub",
+      "is_hq": true,
+      "address": "Iltifatganj to Akbarpur Road, Nawsanda / Kedar Nagar, Gauhaniya, Tanda",
+      "city": "Ambedkar Nagar",
+      "state": "Uttar Pradesh",
+      "pincode": "224230",
+      "country": "India",
+      "full_address": "Iltifatganj to Akbarpur Road, Nawsanda / Kedar Nagar, Gauhaniya, Tanda, Ambedkar Nagar, Uttar Pradesh - 224230",
+      "phones": ["+91 9452352700", "+91 9794445700"],
+      "whatsapp": "919452352700",
+      "email": "headquarters@asianvideofilms.com",
+      "opening_hours": "Monday - Sunday: 9:00 AM - 8:30 PM",
+      "latitude": 26.5507435,
+      "longitude": 82.5492035,
+      "google_maps_url": "https://maps.app.goo.gl/XHpWwRbCYaPwpJ6X7",
+      "embed_map_url": "https://maps.google.com/maps?q=26.5507435,82.5492035&hl=en&z=16&output=embed",
+      "rating": 5.0,
+      "reviews_count": 142,
+      "image": "https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?auto=format&fit=crop&w=800&q=80",
+      "features": [
+        "Cinematic Wedding Film Production House",
+        "4K Drone & High-End Camera Gear Studio",
+        "Authorized Tech & Apple Products Retail",
+        "Custom Desktop Rig & Hardware Upgrades",
+        "Complete CCTV Setup & Digital Printing"
+      ]
+    }
+  ]
+}

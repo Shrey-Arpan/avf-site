@@ -1,0 +1,173 @@
+backend:
+  name: github
+  # REPLACE WITH YOUR GITHUB USERNAME & REPOSITORY NAME
+  # E.g. "shrey/avf-site" or "username/repository"
+  repo: your-username/avf-site
+  branch: main
+
+# Decap CMS local proxy support
+# Run `npx decap-server` locally to edit without setting up GitHub OAuth!
+local_backend: true
+
+# Decap CMS publish mode (simple direct git commit)
+publish_mode: simple
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+collections:
+  - name: "settings"
+    label: "Shop Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "General Shop & Contact Details"
+        file: "data/settings.json"
+        fields:
+          - { label: "Shop Full Name", name: "shop_name", widget: "string" }
+          - { label: "Short Name / Initials", name: "short_name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Announcement Banner", name: "announcement", widget: "text", required: false }
+          - { label: "Primary WhatsApp (e.g. 919452352700)", name: "primary_whatsapp", widget: "string" }
+          - { label: "Primary Contact Phone", name: "primary_phone", widget: "string" }
+          - { label: "Secondary Contact Phone", name: "secondary_phone", widget: "string", required: false }
+          - { label: "Contact Email", name: "email", widget: "string", required: false }
+          - { label: "Store Description", name: "description", widget: "text" }
+          - { label: "Working Hours", name: "working_hours", widget: "string" }
+          - { label: "Years of Experience", name: "experience_years", widget: "number", value_type: "int" }
+          - { label: "Happy Clients Stat", name: "happy_clients", widget: "string" }
+          - { label: "Weddings Filmed Stat", name: "weddings_filmed", widget: "string" }
+          - { label: "Products Sold Stat", name: "products_sold", widget: "string" }
+
+  - name: "branches_file"
+    label: "Shop Branches"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "all_branches"
+        label: "Branches List (Delhi & Ambedkar Nagar)"
+        file: "data/branches.json"
+        fields:
+          - label: "Branches"
+            name: "branches"
+            widget: "list"
+            summary: "{{fields.name}} ({{fields.city}})"
+            fields:
+              - { label: "Branch ID / Slug", name: "id", widget: "string" }
+              - { label: "Branch Name", name: "name", widget: "string" }
+              - { label: "Short Name", name: "short_name", widget: "string" }
+              - { label: "Tag Badge", name: "tag", widget: "string" }
+              - { label: "Is Headquarters?", name: "is_hq", widget: "boolean", default: false }
+              - { label: "Full Address", name: "full_address", widget: "text" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "State", name: "state", widget: "string" }
+              - { label: "Pincode", name: "pincode", widget: "string" }
+              - { label: "Dedicated WhatsApp", name: "whatsapp", widget: "string" }
+              - { label: "Opening Hours", name: "opening_hours", widget: "string" }
+              - { label: "Google Maps URL", name: "google_maps_url", widget: "string" }
+              - { label: "Google Maps Embed URL", name: "embed_map_url", widget: "string" }
+              - { label: "Latitude", name: "latitude", widget: "number", value_type: "float" }
+              - { label: "Longitude", name: "longitude", widget: "number", value_type: "float" }
+              - { label: "Rating (Stars)", name: "rating", widget: "number", value_type: "float" }
+              - { label: "Reviews Count", name: "reviews_count", widget: "number", value_type: "int" }
+              - { label: "Branch Photo Image", name: "image", widget: "image" }
+              - { label: "Key Features & Services", name: "features", widget: "list", field: { label: "Feature", widget: "string" } }
+
+  - name: "products_file"
+    label: "Retail Products"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "all_products"
+        label: "Products Catalog"
+        file: "data/products.json"
+        fields:
+          - { label: "Categories List", name: "categories", widget: "list", field: { label: "Category", widget: "string" } }
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.title}} - ₹{{fields.price}} ({{fields.category}})"
+            fields:
+              - { label: "Product Title", name: "title", widget: "string" }
+              - { label: "SKU / Code", name: "sku", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Price (₹)", name: "price", widget: "number", value_type: "int" }
+              - { label: "Original / MRP (₹)", name: "mrp", widget: "number", value_type: "int", required: false }
+              - { label: "In Stock?", name: "in_stock", widget: "boolean", default: true }
+              - { label: "Featured Product?", name: "featured", widget: "boolean", default: false }
+              - { label: "Badge Tag (e.g. Best Deal, Top Seller)", name: "badge", widget: "string", required: false }
+              - { label: "Branch Availability", name: "branches", widget: "select", multiple: true, options: ["delhi-branch", "ambedkar-nagar-branch", "both"] }
+              - { label: "Product Image URL / Upload", name: "image", widget: "image" }
+              - { label: "Short Description", name: "short_desc", widget: "text" }
+              - { label: "Specifications", name: "specs", widget: "list", field: { label: "Specification", widget: "string" } }
+
+  - name: "services_file"
+    label: "Studio & IT Services"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "all_services"
+        label: "Services Catalog"
+        file: "data/services.json"
+        fields:
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.title}} - {{fields.starting_price}}"
+            fields:
+              - { label: "Service Title", name: "title", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Icon Name", name: "icon", widget: "string" }
+              - { label: "Starting Price", name: "starting_price", widget: "string" }
+              - { label: "Service Image", name: "image", widget: "image" }
+              - { label: "Short Description", name: "short_desc", widget: "text" }
+              - { label: "Deliverables / Inclusions", name: "deliverables", widget: "list", field: { label: "Deliverable", widget: "string" } }
+
+  - name: "gallery_file"
+    label: "Portfolio & Gallery"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "all_gallery"
+        label: "Gallery Items"
+        file: "data/gallery.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}} ({{fields.category}})"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Branch Association", name: "branch", widget: "string" }
+              - { label: "Caption / Story", name: "caption", widget: "text" }
+
+  - name: "reviews_file"
+    label: "Customer Reviews"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "all_reviews"
+        label: "Reviews List"
+        file: "data/reviews.json"
+        fields:
+          - label: "Reviews"
+            name: "reviews"
+            widget: "list"
+            summary: "{{fields.author}} - {{fields.rating}} Stars"
+            fields:
+              - { label: "Customer Name", name: "author", widget: "string" }
+              - { label: "Rating (1 to 5)", name: "rating", widget: "number", value_type: "int" }
+              - { label: "Date (YYYY-MM-DD)", name: "date", widget: "string" }
+              - { label: "Branch Visited", name: "branch", widget: "string" }
+              - { label: "Product / Service Tag", name: "service", widget: "string" }
+              - { label: "Review Comment", name: "comment", widget: "text" }
