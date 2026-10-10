@@ -84,10 +84,8 @@ async function loadStoreData() {
 function renderAll() {
   renderSettings();
   renderBranches();
-  renderCategoryFilterPills();
   renderProducts();
   renderServices();
-  renderGallery();
   renderReviews();
   renderMap();
   updateCartBadge();
@@ -228,58 +226,19 @@ function renderCategoryFilterPills() {
   }).join('');
 }
 
-// 4. Products Catalog
+// 3. Products Catalog
 function renderProducts() {
   const container = document.getElementById('products-grid');
-  const countEl = document.getElementById('products-count');
   if (!container) return;
 
-  // Filter products
-  let filtered = state.products.filter(p => {
-    // Category match
-    const matchCat = state.activeCategory === 'All' || p.category === state.activeCategory;
-    // Branch match
-    let matchBranch = true;
-    if (state.activeBranch !== 'all') {
-      matchBranch = p.branches.includes('both') || p.branches.includes(state.activeBranch);
-    }
-    // Search match
-    let matchSearch = true;
-    if (state.searchQuery.trim()) {
-      const q = state.searchQuery.toLowerCase();
-      matchSearch = p.title.toLowerCase().includes(q) || 
-                    p.sku.toLowerCase().includes(q) || 
-                    p.category.toLowerCase().includes(q) ||
-                    (p.short_desc && p.short_desc.toLowerCase().includes(q));
-    }
-    return matchCat && matchBranch && matchSearch;
-  });
-
-  // Sort products
-  if (state.sortBy === 'price-low') {
-    filtered.sort((a, b) => a.price - b.price);
-  } else if (state.sortBy === 'price-high') {
-    filtered.sort((a, b) => b.price - a.price);
-  } else if (state.sortBy === 'name') {
-    filtered.sort((a, b) => a.title.localeCompare(b.title));
-  } else {
-    // Default: featured first
-    filtered.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
-  }
-
-  if (countEl) {
-    countEl.textContent = `Showing ${filtered.length} products`;
-  }
+  const filtered = state.products;
 
   if (filtered.length === 0) {
     container.innerHTML = `
       <div class="col-span-full py-16 text-center bg-white rounded-2xl border border-dashed border-slate-300">
-        <i data-lucide="search-x" class="w-12 h-12 text-slate-300 mx-auto mb-3"></i>
-        <h4 class="text-base font-bold text-slate-700">No products match your filter</h4>
-        <p class="text-xs text-slate-500 max-w-sm mx-auto mt-1">Try resetting the category filter, search query, or switching branch availability.</p>
-        <button onclick="resetFilters()" class="mt-4 px-4 py-2 bg-indigo-600 text-white text-xs font-semibold rounded-lg hover:bg-indigo-700 transition-colors">
-          Reset All Filters
-        </button>
+        <i data-lucide="package" class="w-12 h-12 text-slate-300 mx-auto mb-3"></i>
+        <h4 class="text-base font-bold text-slate-700">Products will appear here</h4>
+        <p class="text-xs text-slate-500 max-w-sm mx-auto mt-1">Add items via Decap CMS in /admin</p>
       </div>
     `;
     lucide.createIcons();

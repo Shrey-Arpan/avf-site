@@ -90,7 +90,6 @@
         <a href="#branches" class="hover:text-indigo-600 transition-colors">Our Branches</a>
         <a href="#products" class="hover:text-indigo-600 transition-colors">Retail Shop</a>
         <a href="#services" class="hover:text-indigo-600 transition-colors">Studio & Services</a>
-        <a href="#gallery" class="hover:text-indigo-600 transition-colors">Portfolio</a>
         <a href="#reviews" class="hover:text-indigo-600 transition-colors">Reviews</a>
         <a href="#map-section" class="hover:text-indigo-600 transition-colors">Visit Stores</a>
       </nav>
@@ -123,7 +122,6 @@
       <a href="#branches" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Our Branches</a>
       <a href="#products" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Retail Shop & Products</a>
       <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Studio & Services</a>
-      <a href="#gallery" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Portfolio & Gallery</a>
       <a href="#reviews" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Customer Reviews</a>
       <a href="#map-section" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 text-sm font-semibold text-slate-700 border-b border-slate-100">Store Maps & Directions</a>
       <div class="pt-2 flex flex-col gap-2">
@@ -274,70 +272,16 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
-        <div>
-          <span class="text-xs font-extrabold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200 inline-block mb-2">
-            Retail Store Inventory
-          </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
-            Explore Hardware, Laptops & Accessories
-          </h2>
-          <p class="text-slate-600 text-sm mt-1">
-            Genuine products backed by official manufacturer warranties and local branch support.
-          </p>
-        </div>
-
-        <!-- Filter Controls Bar -->
-        <div class="flex items-center gap-2">
-          <span class="text-xs font-bold text-slate-500">Filter Branch:</span>
-          <div class="inline-flex bg-white p-1 rounded-xl border border-slate-200 shadow-sm text-xs font-semibold">
-            <button onclick="setBranchFilter('all')" data-branch="all" class="branch-filter-btn px-3 py-1.5 rounded-lg bg-indigo-600 text-white transition-all">All</button>
-            <button onclick="setBranchFilter('delhi-branch')" data-branch="delhi-branch" class="branch-filter-btn px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Delhi</button>
-            <button onclick="setBranchFilter('ambedkar-nagar-branch')" data-branch="ambedkar-nagar-branch" class="branch-filter-btn px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Ambedkar Nagar</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Search & Category Filters Bar -->
-      <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm mb-8 space-y-4">
-        <div class="flex flex-col sm:flex-row items-center gap-3">
-          <!-- Search Input -->
-          <div class="relative flex-1 w-full">
-            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
-            <input 
-              id="product-search-input" 
-              type="text" 
-              placeholder="Search by product name, category, or SKU (e.g. Core i7, MacBook, CP PLUS)..." 
-              class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
-            />
-          </div>
-
-          <!-- Sort Select -->
-          <div class="flex items-center gap-2 w-full sm:w-auto">
-            <span class="text-xs font-bold text-slate-500 whitespace-nowrap">Sort By:</span>
-            <select id="product-sort-select" class="w-full sm:w-auto py-2.5 px-3 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white">
-              <option value="featured">Featured First</option>
-              <option value="price-low">Price: Low to High</option>
-              <option value="price-high">Price: High to Low</option>
-              <option value="name">Product Name (A-Z)</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Category Horizontal Scroll Pills -->
-        <div class="pt-2 border-t border-slate-100">
-          <div id="category-filter-container" class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
-            <!-- Injected via JavaScript -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Products Count Label -->
-      <div class="flex items-center justify-between text-xs text-slate-500 mb-6 px-1">
-        <span id="products-count">Showing products...</span>
-        <span class="flex items-center gap-1 text-indigo-600 font-semibold cursor-pointer" onclick="resetFilters()">
-          <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> Reset Filters
+      <div class="mb-10 text-center max-w-3xl mx-auto">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200 inline-block mb-2">
+          Retail Store Inventory
         </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
+          Explore Laptops & Accessories
+        </h2>
+        <p class="text-slate-600 text-sm mt-1">
+          Genuine products backed by official manufacturer warranties and local branch support.
+        </p>
       </div>
 
       <!-- Products Grid -->
@@ -348,14 +292,14 @@
     </div>
   </section>
 
-  <!-- STUDIO & IT SERVICES SECTION -->
+  <!-- STUDIO & SERVICES SECTION -->
   <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-3xl mx-auto mb-14">
       <span class="text-xs font-extrabold uppercase tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200 inline-block mb-3">
-        Studio & IT Solutions
+        Studio & Services
       </span>
       <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
-        Professional Production & Tech Services
+        Professional Studio & Production Services
       </h2>
       <p class="text-slate-600 text-sm md:text-base mt-3 leading-relaxed">
         From cinematic 4K wedding films and pre-wedding shoots to chip-level laptop repairs and turnkey CCTV installations.
@@ -365,40 +309,6 @@
     <!-- Services Grid -->
     <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Injected via JavaScript -->
-    </div>
-  </section>
-
-  <!-- PORTFOLIO & GALLERY SECTION -->
-  <section id="gallery" class="py-20 bg-slate-950 text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-        <div>
-          <span class="text-xs font-extrabold uppercase tracking-widest text-amber-400 bg-slate-900 px-3 py-1 rounded-full border border-slate-800 inline-block mb-3">
-            Our Work in Action
-          </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
-            Cinematic Highlights & Tech Showcase
-          </h2>
-          <p class="text-slate-400 text-sm mt-2 max-w-xl">
-            A glimpse of our recent wedding productions, custom desktop workstation builds, and retail store setups.
-          </p>
-        </div>
-
-        <!-- Gallery Filter Tabs -->
-        <div class="flex flex-wrap gap-2 text-xs font-bold">
-          <button onclick="setGalleryFilter('All')" data-category="All" class="gallery-filter-btn px-4 py-2 rounded-xl bg-indigo-600 text-white transition-all">All</button>
-          <button onclick="setGalleryFilter('Cinematography')" data-category="Cinematography" class="gallery-filter-btn px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white transition-all">Cinematography</button>
-          <button onclick="setGalleryFilter('Custom PC Builds')" data-category="Custom PC Builds" class="gallery-filter-btn px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white transition-all">PC Builds</button>
-          <button onclick="setGalleryFilter('Studio & Photography')" data-category="Studio & Photography" class="gallery-filter-btn px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white transition-all">Studio Shoots</button>
-        </div>
-      </div>
-
-      <!-- Gallery Grid -->
-      <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Injected via JavaScript -->
-      </div>
-
     </div>
   </section>
 
@@ -551,8 +461,7 @@
           <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">Quick Navigation</h4>
           <ul class="space-y-2 text-xs text-slate-400">
             <li><a href="#products" class="hover:text-white transition-colors">Retail Products</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors">Studio & Filming</a></li>
-            <li><a href="#gallery" class="hover:text-white transition-colors">Portfolio Gallery</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Studio & Services</a></li>
             <li><a href="#reviews" class="hover:text-white transition-colors">Google Reviews</a></li>
             <li><a href="admin/" class="text-amber-400 hover:text-amber-300 font-bold transition-colors">🔐 Decap CMS Admin (/admin)</a></li>
           </ul>

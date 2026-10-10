@@ -1,0 +1,17 @@
+{
+  "name": "avf-site",
+  "version": "1.0.0",
+  "description": "Asian Computers & Asian Video Films - Retail shop and studio website with Decap CMS",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "cms": "npx decap-server"
+  },
+  "keywords": [
+    "retail",
+    "decap-cms",
+    "github-pages"
+  ],
+  "author": "",
+  "license": "ISC"
+}
